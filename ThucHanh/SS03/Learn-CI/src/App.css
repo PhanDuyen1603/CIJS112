@@ -1,0 +1,137 @@
+.board {
+  min-height: 100vh;
+  padding: 24px 32px;
+  background: #f5f6f8;
+  box-sizing: border-box;
+}
+
+.board__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  max-width: 280px;
+  padding: 10px 14px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  color: #9ca3af;
+}
+
+.search input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #374151;
+  background: transparent;
+}
+
+.search input::placeholder {
+  color: #9ca3af;
+}
+
+.btn-new {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  background: #2563eb;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-new:hover {
+  background: #1d4ed8;
+}
+
+.board__main {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.kanban-column {
+  width: 320px;
+  flex-shrink: 0;
+}
+
+.kanban-column__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  background: #e8ecf1;
+  border-radius: 12px 12px 0 0;
+}
+
+.kanban-column__title-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.kanban-column__title {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.kanban-column__count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 22px;
+  height: 22px;
+  padding: 0 6px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #6b7280;
+  background: #fff;
+  border-radius: 999px;
+}
+
+.kanban-column__actions {
+  display: flex;
+  gap: 6px;
+}
+
+.kanban-column__icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1;
+  color: #6b7280;
+  background: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.kanban-column__icon-btn:hover {
+  background: #f3f4f6;
+}
+
+.kanban-column__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 12px;
+  background: #e8ecf1;
+  border-radius: 0 0 12px 12px;
+  min-height: 200px;
+}
