@@ -1,0 +1,10 @@
+<p>hello works!</p>
+<h1>My name is: {{ name() }}</h1>
+<button (click)="handleClick()">Click me</button>
+
+<div class="counter">
+  <p>Count: <strong>{{ count() }}</strong></p>
+  <button (click)="handleIncCount()">Tăng count</button>
+</div>
+<input type="text" [ngModel]="inputValue()" (ngModelChange)="inputValue.set($event)">
+<p>Giá trị input: {{ inputValue() }}</p>

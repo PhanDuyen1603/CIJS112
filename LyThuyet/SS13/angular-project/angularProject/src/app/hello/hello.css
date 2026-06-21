@@ -1,0 +1,12 @@
+.counter {
+  margin-top: 1rem;
+}
+
+.counter p {
+  font-size: 1.25rem;
+}
+
+.counter button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
